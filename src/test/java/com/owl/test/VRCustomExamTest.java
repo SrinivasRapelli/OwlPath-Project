@@ -11,7 +11,7 @@ public class VRCustomExamTest extends BaseTest{
 	public void login() {
 		vrCustomExamPage = new VRCustomExamPage(driver);
 		vrCustomExamPage.clickOnLoginBtn();
-		//vrCustomExamPage.enterEmail();
+		vrCustomExamPage.enterEmail();
 		vrCustomExamPage.enterPassword();
 		vrCustomExamPage.clickOnLoginButton();
 	}
@@ -43,7 +43,13 @@ public class VRCustomExamTest extends BaseTest{
 		vrCustomExamPage.readTheCorrectAnswers();
 		vrCustomExamPage.readTheWrongAnswers();
 		vrCustomExamPage.readTheSkippedAnswers();
+		vrCustomExamPage.clickOnDashboardButton();
 	}	
+	
+	@Test(priority = 4)
+	public void logout() {
+		vrCustomExamPage.clickOnLogoutButton();
+	}
 	
 	
 }

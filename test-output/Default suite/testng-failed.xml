@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.owl.test.MathCustomExamTest">
+      <class name="com.owl.test.VRCustomExamTest">
         <methods>
-          <include name="checkTheReport"/>
+          <include name="logout"/>
           <include name="closeBrowser"/>
           <include name="openBrowser"/>
         </methods>
-      </class> <!-- com.owl.test.MathCustomExamTest -->
+      </class> <!-- com.owl.test.VRCustomExamTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

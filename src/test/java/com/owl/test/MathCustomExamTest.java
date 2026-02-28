@@ -42,6 +42,11 @@ public class MathCustomExamTest extends BaseTest {
 		mathCustomeExamPage.readTheCorrectAnswers();
 		mathCustomeExamPage.readTheWrongAnswers();
 		mathCustomeExamPage.readTheSkippedAnswers();
+		mathCustomeExamPage.clickOnDashboardButton();
+	}
+	@Test(priority = 4)
+	public void logout() {
+		mathCustomeExamPage.clickOnLogoutButton();
 	}
 	
 	

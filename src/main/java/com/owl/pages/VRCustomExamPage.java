@@ -48,7 +48,9 @@ public class VRCustomExamPage {
 	By correctAnswer = By.xpath("//*[text()='Correct Questions']/following-sibling::*[1]");
 	By wrongAnswer = By.xpath("//*[text()='Wrong Questions']/following-sibling::*[1]");
 	By skippedAnswer = By.xpath("//*[text()='Skipped Questions']/following-sibling::*[1]");
-	
+	By dashboardBtn = By.xpath("//*[text()=\"Dashboard\"]");
+	By profileBtn = By.xpath("/html/body/div/nav/div/div/div[3]/button");
+	By logoutBtn = By.xpath("//*[text()='Logout']");
 	
 	
 	public void clickOnLoginBtn() {
@@ -233,6 +235,23 @@ public class VRCustomExamPage {
 			            wait.until(ExpectedConditions.visibilityOfElementLocated(skippedAnswer));
 			 String skippedAnswer = spdAnswer.getText();
 			 System.out.println(skippedAnswer);
+		}
+
+		public void clickOnDashboardButton() {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+			 WebElement dashboardbutton =
+			            wait.until(ExpectedConditions.visibilityOfElementLocated(dashboardBtn));
+			 dashboardbutton.click();
+			
+		}
+		public void clickOnLogoutButton() {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+			WebElement profile = wait.until(ExpectedConditions.visibilityOfElementLocated(profileBtn));
+			profile.click();
+			 WebElement logoutButton =
+			            wait.until(ExpectedConditions.visibilityOfElementLocated(logoutBtn));
+			 logoutButton.click();
+			
 		}
 	
 	

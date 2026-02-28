@@ -44,7 +44,14 @@ public class NVRCustomExamTest extends BaseTest{
 		nvrCustomExamPage.readTheCorrectAnswers();
 		nvrCustomExamPage.readTheWrongAnswers();
 		nvrCustomExamPage.readTheSkippedAnswers();
+		nvrCustomExamPage.clickOnDashboardButton();
 	}	
+	
+	@Test(priority = 4)
+	public void logout() {
+		nvrCustomExamPage.clickOnLogoutButton();
+	}
+	
 	
 	
 }
