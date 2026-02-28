@@ -1,10 +1,10 @@
 package com.owl.test;
 
 import org.testng.annotations.Test;
-import com.owl.pages.BasePage;
+
 import com.owl.pages.VRCustomExamPage;
 
-public class VRCustomExamTest extends BasePage{
+public class VRCustomExamTest extends BaseTest{
 	VRCustomExamPage vrCustomExamPage;
 	
 	@Test

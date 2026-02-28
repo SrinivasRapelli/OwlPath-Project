@@ -1,4 +1,4 @@
-package com.owl.pages;
+package com.owl.test;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -7,7 +7,7 @@ import org.testng.annotations.BeforeSuite;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 
-public class BasePage {
+public class BaseTest {
 	
 	public static WebDriver driver;
 	
@@ -23,6 +23,6 @@ public class BasePage {
 	
 	@AfterSuite
 	public void closeBrowser() {
-		driver.close();
+		driver.quit();
 	}
 }

@@ -2,9 +2,8 @@ package com.owl.test;
 
 import org.testng.annotations.Test;
 import com.owl.pages.AssessmentPage;
-import com.owl.pages.BasePage;
 
-public class AssessmentTest extends BasePage {
+public class AssessmentTest extends BaseTest {
 	
 	static AssessmentPage assessmentPage;
 

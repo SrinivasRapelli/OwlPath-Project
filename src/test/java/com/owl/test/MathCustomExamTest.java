@@ -2,10 +2,9 @@ package com.owl.test;
 
 import org.testng.annotations.Test;
 
-import com.owl.pages.BasePage;
 import com.owl.pages.MathCustomeExamPage;
 
-public class MathCustomExamTest extends BasePage {
+public class MathCustomExamTest extends BaseTest {
 	
 	MathCustomeExamPage mathCustomeExamPage;
 	

@@ -2,11 +2,10 @@ package com.owl.test;
 
 import org.testng.annotations.Test;
 
-import com.owl.pages.BasePage;
 import com.owl.pages.NVRCustomExamPage;
 import com.owl.pages.VRCustomExamPage;
 
-public class NVRCustomExamTest extends BasePage{
+public class NVRCustomExamTest extends BaseTest{
 	NVRCustomExamPage nvrCustomExamPage ;
 	
 	
