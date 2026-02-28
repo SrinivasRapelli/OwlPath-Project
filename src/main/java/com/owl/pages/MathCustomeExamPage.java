@@ -61,13 +61,13 @@ public class MathCustomeExamPage {
 	public void enterEmail() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(email));
-		element.sendKeys("rahulchandra12345@gmail.com");
+		element.sendKeys("srinibackup13@gmail.com");
 	}
 	
 	public void enterPassword() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(password));
-		element.sendKeys("Rahul@123");
+		element.sendKeys("000000");
 	}
 	
 	public void clickOnLoginButton() {
