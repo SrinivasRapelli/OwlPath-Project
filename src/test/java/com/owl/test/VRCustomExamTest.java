@@ -28,6 +28,7 @@ public class VRCustomExamTest extends BasePage{
 		vrCustomExamPage.clickOnCreateCustomExamBUtton();
 	}
 	
+	
 	@Test(priority = 2)
 	public void attemptAllQuestions() {
 		vrCustomExamPage.attemptTheAssessment();
