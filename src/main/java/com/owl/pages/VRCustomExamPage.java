@@ -36,7 +36,7 @@ public class VRCustomExamPage {
 	By startbtn = By.xpath("//button[text()='Start']");
 	By optionA = By.xpath("//*[text()=\"A\"]");
 	By optionB = By.xpath("//*[text()=\"B\"]");
-	By nextBtn = By.xpath("//button[text()='Next']");
+	By nextBtn = By.xpath("//button[text()='Next Question']");
 	By skipBtn = By.xpath("//button[text()='Skip']");
 	
 	By finishExamBtn = By.xpath("//button[text()=\"Finish Exam\"]");

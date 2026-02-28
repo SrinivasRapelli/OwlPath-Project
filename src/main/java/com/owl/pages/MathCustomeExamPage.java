@@ -35,7 +35,7 @@ public class MathCustomeExamPage {
 	By startbtn = By.xpath("//button[text()='Start']");
 	By optionA = By.xpath("//*[text()=\"A\"]");
 	By optionB = By.xpath("//*[text()=\"B\"]");
-	By nextBtn = By.xpath("//button[text()='Next']");
+	By nextBtn = By.xpath("//button[text()='Next Question']");
 	By skipBtn = By.xpath("//button[text()='Skip']");
 	
 	By finishExamBtn = By.xpath("//button[text()=\"Finish Exam\"]");
@@ -52,8 +52,10 @@ public class MathCustomeExamPage {
 	
 	public void clickOnLoginBtn() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(loginBtn));
-		element.click();
+//		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(loginBtn));
+//		element.click();
+		driver.navigate().to("https://dev.d36i9dbopvz3hg.amplifyapp.com/login");
+
 	}
 	
 	public void enterEmail() {

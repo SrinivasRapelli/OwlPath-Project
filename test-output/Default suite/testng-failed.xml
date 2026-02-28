@@ -3,16 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.owl.test.VRCustomExamTest">
+      <class name="com.owl.test.NVRCustomExamTest">
         <methods>
-          <include name="checkTheReport"/>
-          <include name="startACustomExam"/>
-          <include name="attemptAllQuestions"/>
           <include name="closeBrowser"/>
+          <include name="attemptAllQuestions"/>
           <include name="openBrowser"/>
-          <include name="login"/>
+          <include name="checkTheReport"/>
         </methods>
-      </class> <!-- com.owl.test.VRCustomExamTest -->
+      </class> <!-- com.owl.test.NVRCustomExamTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
