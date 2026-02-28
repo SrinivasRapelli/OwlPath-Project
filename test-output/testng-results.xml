@@ -2,40 +2,40 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-28T12:03:31 IST" name="Default suite" finished-at="2026-02-28T12:03:52 IST" duration-ms="20654">
+  <suite started-at="2026-02-28T18:26:29 IST" name="Default suite" finished-at="2026-02-28T18:26:49 IST" duration-ms="20499">
     <groups>
     </groups>
-    <test started-at="2026-02-28T12:03:31 IST" name="Default test" finished-at="2026-02-28T12:03:52 IST" duration-ms="20654">
-      <class name="com.owl.test.MathCustomExamTest">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.owl.test.MathCustomExamTest@2a65fe7c]" started-at="2026-02-28T12:03:24 IST" name="openBrowser" finished-at="2026-02-28T12:03:31 IST" duration-ms="7438" status="PASS">
+    <test started-at="2026-02-28T18:26:29 IST" name="Default test" finished-at="2026-02-28T18:26:49 IST" duration-ms="20499">
+      <class name="com.owl.test.VRCustomExamTest">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.owl.test.VRCustomExamTest@6302bbb1]" started-at="2026-02-28T18:26:21 IST" name="openBrowser" finished-at="2026-02-28T18:26:29 IST" duration-ms="7551" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="login()[pri:0, instance:com.owl.test.MathCustomExamTest@2a65fe7c]" started-at="2026-02-28T12:03:31 IST" name="login" finished-at="2026-02-28T12:03:34 IST" duration-ms="2185" status="PASS">
+        <test-method signature="login()[pri:0, instance:com.owl.test.VRCustomExamTest@6302bbb1]" started-at="2026-02-28T18:26:29 IST" name="login" finished-at="2026-02-28T18:26:31 IST" duration-ms="2009" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="startACustomExam()[pri:1, instance:com.owl.test.MathCustomExamTest@2a65fe7c]" started-at="2026-02-28T12:03:34 IST" name="startACustomExam" finished-at="2026-02-28T12:03:41 IST" duration-ms="7488" status="PASS">
+        <test-method signature="startACustomExam()[pri:1, instance:com.owl.test.VRCustomExamTest@6302bbb1]" started-at="2026-02-28T18:26:31 IST" name="startACustomExam" finished-at="2026-02-28T18:26:39 IST" depends-on-methods="com.owl.test.VRCustomExamTest.login" duration-ms="8192" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startACustomExam -->
-        <test-method signature="attemptAllQuestions()[pri:2, instance:com.owl.test.MathCustomExamTest@2a65fe7c]" started-at="2026-02-28T12:03:41 IST" name="attemptAllQuestions" finished-at="2026-02-28T12:03:47 IST" duration-ms="5432" status="PASS">
+        <test-method signature="attemptAllQuestions()[pri:2, instance:com.owl.test.VRCustomExamTest@6302bbb1]" started-at="2026-02-28T18:26:39 IST" name="attemptAllQuestions" finished-at="2026-02-28T18:26:44 IST" duration-ms="4851" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- attemptAllQuestions -->
-        <test-method signature="checkTheReport()[pri:3, instance:com.owl.test.MathCustomExamTest@2a65fe7c]" started-at="2026-02-28T12:03:47 IST" name="checkTheReport" finished-at="2026-02-28T12:03:52 IST" duration-ms="5304" status="PASS">
+        <test-method signature="checkTheReport()[pri:3, instance:com.owl.test.VRCustomExamTest@6302bbb1]" started-at="2026-02-28T18:26:44 IST" name="checkTheReport" finished-at="2026-02-28T18:26:49 IST" duration-ms="4872" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkTheReport -->
-        <test-method signature="logout()[pri:4, instance:com.owl.test.MathCustomExamTest@2a65fe7c]" started-at="2026-02-28T12:03:52 IST" name="logout" finished-at="2026-02-28T12:03:52 IST" duration-ms="152" status="PASS">
+        <test-method signature="logout()[pri:4, instance:com.owl.test.VRCustomExamTest@6302bbb1]" started-at="2026-02-28T18:26:49 IST" name="logout" finished-at="2026-02-28T18:26:49 IST" duration-ms="464" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.owl.test.MathCustomExamTest@2a65fe7c]" started-at="2026-02-28T12:03:52 IST" name="closeBrowser" finished-at="2026-02-28T12:03:52 IST" duration-ms="116" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.owl.test.VRCustomExamTest@6302bbb1]" started-at="2026-02-28T18:26:49 IST" name="closeBrowser" finished-at="2026-02-28T18:26:49 IST" duration-ms="193" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- com.owl.test.MathCustomExamTest -->
+      </class> <!-- com.owl.test.VRCustomExamTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
