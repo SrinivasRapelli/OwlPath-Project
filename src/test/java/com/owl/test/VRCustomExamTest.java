@@ -39,7 +39,7 @@ public class VRCustomExamTest extends BaseTest{
 	@Test(priority = 3)
 	public void checkTheReport() throws InterruptedException {
 		vrCustomExamPage.clickOnViewReportButton();
-		vrCustomExamPage.clickOnViewDetailedReportButton();
+		vrCustomExamPage.clickOnViewAnswersButton();
 		vrCustomExamPage.readTheCorrectAnswers();
 		vrCustomExamPage.readTheWrongAnswers();
 		vrCustomExamPage.readTheSkippedAnswers();

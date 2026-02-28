@@ -43,7 +43,7 @@ public class VRCustomExamPage {
 	By submitBtn = By.xpath("//*[text()='Submit']");
 	
 	By viewReportBtn = By.xpath("//*[text()= 'View Detailed Report']");
-	By viewDetailedReportBtn = By.xpath("//*[text()='View Detailed Report']");
+	By viewAnswersBtn = By.xpath("//*[text()='View Answers']");
 	
 	By correctAnswer = By.xpath("//*[text()='Correct Questions']/following-sibling::*[1]");
 	By wrongAnswer = By.xpath("//*[text()='Wrong Questions']/following-sibling::*[1]");
@@ -203,11 +203,11 @@ public class VRCustomExamPage {
 			
 		}
 
-		public void clickOnViewDetailedReportButton() throws InterruptedException {
+		public void clickOnViewAnswersButton() throws InterruptedException {
 			Thread.sleep(2000);
 			 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 			 WebElement viewdetailedReportButton =
-			            wait.until(ExpectedConditions.elementToBeClickable(viewDetailedReportBtn));
+			            wait.until(ExpectedConditions.elementToBeClickable(viewAnswersBtn));
 			 viewdetailedReportButton.click();
 		}
 		

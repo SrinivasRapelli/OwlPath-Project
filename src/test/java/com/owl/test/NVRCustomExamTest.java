@@ -40,7 +40,7 @@ public class NVRCustomExamTest extends BaseTest{
 	@Test(priority = 3)
 	public void checkTheReport() throws InterruptedException {
 		nvrCustomExamPage.clickOnViewReportButton();
-		nvrCustomExamPage.clickOnViewDetailedReportButton();
+		nvrCustomExamPage.clickOnViewAnswersButton();
 		nvrCustomExamPage.readTheCorrectAnswers();
 		nvrCustomExamPage.readTheWrongAnswers();
 		nvrCustomExamPage.readTheSkippedAnswers();

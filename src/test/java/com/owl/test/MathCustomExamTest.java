@@ -38,7 +38,7 @@ public class MathCustomExamTest extends BaseTest {
 	@Test(priority = 3)
 	public void checkTheReport() throws InterruptedException {
 		mathCustomeExamPage.clickOnViewReportButton();
-		mathCustomeExamPage.clickOnViewDetailedReportButton();
+		mathCustomeExamPage.clickOnViewAnswersButton();
 		mathCustomeExamPage.readTheCorrectAnswers();
 		mathCustomeExamPage.readTheWrongAnswers();
 		mathCustomeExamPage.readTheSkippedAnswers();
