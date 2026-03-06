@@ -17,7 +17,7 @@ public class VRCustomExamTest extends BaseTest{
 	}
 	
 	@Test(priority = 1, dependsOnMethods = "login")
-	public void startACustomExam() {
+	public void compoundWordsCustomExam() throws InterruptedException {
 		vrCustomExamPage = new VRCustomExamPage(driver);
 		vrCustomExamPage.clickOnTakeAnExamButton();
 		vrCustomExamPage.clickOnVrSubject();
@@ -26,18 +26,31 @@ public class VRCustomExamTest extends BaseTest{
 		vrCustomExamPage.enterNoOfQuestions();
 		vrCustomExamPage.enternoOfMinutes();
 		vrCustomExamPage.clickOnCreateCustomExamBUtton();
+		vrCustomExamPage.attemptTheAssessment();
+		vrCustomExamPage.clickOnFishExam();
+		vrCustomExamPage.clickOnSubmitBtn();
+		vrCustomExamPage.clickOnViewReportButton();
+		vrCustomExamPage.clickOnViewAnswersButton();
+		vrCustomExamPage.readTheCorrectAnswers();
+		vrCustomExamPage.readTheWrongAnswers();
+		vrCustomExamPage.readTheSkippedAnswers();
+		vrCustomExamPage.clickOnDashboardButton();
 	}
 	
 	
 	@Test(priority = 2)
-	public void attemptAllQuestions() {
+	public void letterLinksCustomExam() throws InterruptedException {
+		vrCustomExamPage = new VRCustomExamPage(driver);
+		vrCustomExamPage.clickOnTakeAnExamButton();
+		vrCustomExamPage.clickOnVrSubject();
+		vrCustomExamPage.selectLetterLinksStartPracticeButton();
+		vrCustomExamPage.clickOnCustomExam();
+		vrCustomExamPage.enterNoOfQuestions();
+		vrCustomExamPage.enternoOfMinutes();
+		vrCustomExamPage.clickOnCreateCustomExamBUtton();
 		vrCustomExamPage.attemptTheAssessment();
 		vrCustomExamPage.clickOnFishExam();
 		vrCustomExamPage.clickOnSubmitBtn();
-	}
-	
-	@Test(priority = 3)
-	public void checkTheReport() throws InterruptedException {
 		vrCustomExamPage.clickOnViewReportButton();
 		vrCustomExamPage.clickOnViewAnswersButton();
 		vrCustomExamPage.readTheCorrectAnswers();
@@ -46,7 +59,7 @@ public class VRCustomExamTest extends BaseTest{
 		vrCustomExamPage.clickOnDashboardButton();
 	}	
 	
-	@Test(priority = 4)
+	@Test(priority = 3)
 	public void logout() {
 		vrCustomExamPage.clickOnLogoutButton();
 	}

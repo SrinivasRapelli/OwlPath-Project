@@ -28,6 +28,7 @@ public class NVRCustomExamPage {
 	By takeAnExamBtn = By.xpath("//*[text()=' Take an Exam']");
 	By nvrSub = By.xpath("(//*[text()='Non-Verbal Reasoning'])");
 	By oddOneOutStartPractice = By.xpath("//*[text()='Odd One Out']/following-sibling::button");
+	By reflectionStartPractice = By.xpath("//*[text()='Odd One Out']/following-sibling::button");
 	By customeExamButton= By.xpath("//*[text()='Create Custom Exam']");
 	By noOfQuestions = By.id("questionCount");
 	By duration = By.id("duration");
@@ -93,6 +94,12 @@ public class NVRCustomExamPage {
 	public void selectOddOneOutStartPracticeButton() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(oddOneOutStartPractice));
+		element.click();
+	}
+	
+	public void selectReflectionStartPracticeButton() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(reflectionStartPractice));
 		element.click();
 	}
 

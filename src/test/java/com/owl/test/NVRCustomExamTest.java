@@ -19,7 +19,7 @@ public class NVRCustomExamTest extends BaseTest{
 	}
 	
 	@Test(priority = 1)
-	public void startACustomExam() {
+	public void oddOneOutCustomExam() throws InterruptedException {
 		nvrCustomExamPage = new NVRCustomExamPage(driver);
 		nvrCustomExamPage.clickOnTakeAnExamButton();
 		nvrCustomExamPage.clickOnNVRSubject();
@@ -28,26 +28,40 @@ public class NVRCustomExamTest extends BaseTest{
 		nvrCustomExamPage.enterNoOfQuestions();
 		nvrCustomExamPage.enternoOfMinutes();
 		nvrCustomExamPage.clickOnCreateCustomExamBUtton();
-	}
-	
-	@Test(priority = 2)
-	public void attemptAllQuestions() {
 		nvrCustomExamPage.attemptTheAssessment();
 		nvrCustomExamPage.clickOnFishExam();
 		nvrCustomExamPage.clickOnSubmitBtn();
-	}
-	
-	@Test(priority = 3)
-	public void checkTheReport() throws InterruptedException {
 		nvrCustomExamPage.clickOnViewReportButton();
 		nvrCustomExamPage.clickOnViewAnswersButton();
 		nvrCustomExamPage.readTheCorrectAnswers();
 		nvrCustomExamPage.readTheWrongAnswers();
 		nvrCustomExamPage.readTheSkippedAnswers();
 		nvrCustomExamPage.clickOnDashboardButton();
-	}	
+	}
 	
-	@Test(priority = 4)
+	@Test(priority = 2)
+	public void reflectionCustomExam() throws InterruptedException {
+		nvrCustomExamPage = new NVRCustomExamPage(driver);
+		nvrCustomExamPage.clickOnTakeAnExamButton();
+		nvrCustomExamPage.clickOnNVRSubject();
+		nvrCustomExamPage.selectReflectionStartPracticeButton();
+		nvrCustomExamPage.clickOnCustomExam();
+		nvrCustomExamPage.enterNoOfQuestions();
+		nvrCustomExamPage.enternoOfMinutes();
+		nvrCustomExamPage.clickOnCreateCustomExamBUtton();
+		nvrCustomExamPage.attemptTheAssessment();
+		nvrCustomExamPage.clickOnFishExam();
+		nvrCustomExamPage.clickOnSubmitBtn();
+		nvrCustomExamPage.clickOnViewReportButton();
+		nvrCustomExamPage.clickOnViewAnswersButton();
+		nvrCustomExamPage.readTheCorrectAnswers();
+		nvrCustomExamPage.readTheWrongAnswers();
+		nvrCustomExamPage.readTheSkippedAnswers();
+		nvrCustomExamPage.clickOnDashboardButton();
+	}
+	
+	
+	@Test(priority = 3)
 	public void logout() {
 		nvrCustomExamPage.clickOnLogoutButton();
 	}

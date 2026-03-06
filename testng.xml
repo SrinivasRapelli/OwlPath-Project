@@ -6,6 +6,8 @@
         <classes>
             <class name="com.owl.test.AssessmentTest"/>
             <class name="com.owl.test.MathCustomExamTest"/>
+            <class name="com.owl.test.NVRCustomExamTest"/> 
+            <class name="com.owl.test.VRCustomExamTest"/> 
         </classes>
     </test>
     

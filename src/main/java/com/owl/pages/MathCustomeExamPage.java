@@ -28,6 +28,11 @@ public class MathCustomeExamPage {
 	
 	By takeAnExamBtn = By.xpath("//*[text()=' Take an Exam']");
 	By fractionsStartPractice = By.xpath("//*[text()='Fractions']/following-sibling::button");
+	By additionStartPractice = By.xpath("//*[text()='Addition']/following-sibling::button");
+	By placeValuePractice = By.xpath("//*[text()='Place Value']/following-sibling::button");
+	By subtractionPractice = By.xpath("//*[text()='Subtraction']/following-sibling::button");
+	By factorsMultiplesPractice = By.xpath("//*[text()='Factors, Multiples, and Prime numbers']/following-sibling::button");
+	By additionAndSubtractionPractice = By.xpath("//*[text()='Addition and Subtraction Word Problems']/following-sibling::button");
 	By customeExamButton= By.xpath("//*[text()='Create Custom Exam']");
 	By noOfQuestions = By.id("questionCount");
 	By duration = By.id("duration");
@@ -53,10 +58,11 @@ public class MathCustomeExamPage {
 	
 	
 	
-	public void clickOnLoginBtn() {
+	public void clickOnLoginBtn() throws InterruptedException {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 //		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(loginBtn));
 //		element.click();
+		Thread.sleep(3000);
 		driver.navigate().to("https://dev.d36i9dbopvz3hg.amplifyapp.com/login");
 
 	}
@@ -88,6 +94,35 @@ public class MathCustomeExamPage {
 	public void selectFractionsStartPracticeButton() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(fractionsStartPractice));
+		element.click();
+	}
+	public void selectAdditionStartPracticeButton() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(additionStartPractice));
+		element.click();
+	}
+	
+	public void selectPlacevalueStartPracticeButton() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(placeValuePractice));
+		element.click();
+	}
+	
+	public void selectSubtractionStartPracticeButton() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(subtractionPractice));
+		element.click();
+	}
+	
+	public void selectFactorsMultiplesPracticeStartPracticeButton() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(factorsMultiplesPractice));
+		element.click();
+	}
+	
+	public void selectAdditionAndSubtractionWordProblemsPracticeStartPracticeButton() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(additionAndSubtractionPractice));
 		element.click();
 	}
 	

@@ -29,6 +29,7 @@ public class VRCustomExamPage {
 	By takeAnExamBtn = By.xpath("//*[text()=' Take an Exam']");
 	By vrSub = By.xpath("(//*[text()='Verbal Reasoning'])[1]");
 	By compoundWordsStartPractice = By.xpath("//*[text()='Compound Words']/following-sibling::button");
+	By letterLinksStartPractice = By.xpath("//*[text()='Letter Links']/following-sibling::button");
 	By customeExamButton= By.xpath("//*[text()='Create Custom Exam']");
 	By noOfQuestions = By.id("questionCount");
 	By duration = By.id("duration");
@@ -95,6 +96,13 @@ public class VRCustomExamPage {
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(compoundWordsStartPractice));
 		element.click();
 	}
+	public void selectLetterLinksStartPracticeButton() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(letterLinksStartPractice));
+		element.click();
+	}
+	
+	
 
 	
 	public void clickOnCustomExam() {
